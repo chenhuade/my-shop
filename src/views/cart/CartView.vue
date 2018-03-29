@@ -1,16 +1,24 @@
 <template>
   <div>
-    购物车
+    <common-header style="overflow:visible;">
+      购物车
+    </common-header>
+    
   </div>
 </template>
 
 <script>
+import CommonHeader from '../../components/CommonHeader'
+
 export default {
   name: 'cart-view',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  components: {
+    CommonHeader
   }
 }
 </script>

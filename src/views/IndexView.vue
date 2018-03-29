@@ -1,6 +1,5 @@
 <template>
   <div class="index-view">
-    <index-header style="overflow:visible;"></index-header>
     <section class="app-content">
         <!-- index router -->
         <router-view></router-view>
@@ -10,7 +9,6 @@
 </template>
 
 <script>
-import IndexHeader from '../components/IndexHeader'
 import IndexNav from '../components/IndexNav'
 
 export default {
@@ -20,7 +18,6 @@ export default {
     }
   },
   components: {
-      IndexHeader,
       IndexNav
   }
 }
