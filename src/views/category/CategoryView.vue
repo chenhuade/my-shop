@@ -1,14 +1,9 @@
 <template>
   <div>
-    <common-header style="overflow:visible;" :hasBack="true">
+    <common-header :hasBack="true" :menuArr="menuArr">
       分类
-      <div slot="rightLot">
-        <p style="color: #ffffff" @click="clickAdd">+</p>
-        <ul v-show="showUl">
-          <li v-for="pr in input" v-bind:key="pr" style="color:red">
-            {{pr}}
-          </li>
-        </ul>
+      <div slot="tipsIconSlot">
+        +
       </div>
     </common-header>
   </div>
@@ -22,13 +17,15 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      input: ['a','b'],
-      showUl: false
-    }
-  },
-  methods: {
-    'clickAdd': function() {
-      this.showUl = !this.showUl
+      menuArr:[{
+        path: '/index/cart',
+        text: '购物车',
+        iconClass: ''
+      },{
+        path: '/index/member',
+        text: '我',
+        iconClass: ''
+      }]
     }
   },
   components: {
