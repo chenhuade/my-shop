@@ -38,6 +38,7 @@ export default {
       flex:0 0 48px; /* 左右两列固定宽 */
       order:-1; /* 让left居于左侧 */
       .leftImg {
+        padding-top: 8px; /* 用box的高度减去图片的高度再除以2，就是padding-top的值 */
         width: 28px;
         height: 28px;
       }
