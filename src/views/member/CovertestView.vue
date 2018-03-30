@@ -1,9 +1,6 @@
 <template>
   <div class="_full_router">
     <div class="_full_inner">
-      <common-header style="overflow:visible;">
-        测试覆盖
-      </common-header>
       这里是内容
     </div>
   </div>

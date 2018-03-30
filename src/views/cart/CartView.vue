@@ -1,11 +1,5 @@
 <template>
   <div>
-    <common-header :hasBack="true" :menuArr="menuArr">
-      购物车
-      <div slot="tipsIconSlot">
-        +
-      </div>
-    </common-header>
   </div>
 </template>
 

@@ -1,8 +1,7 @@
 <template>
   <div class="index-view">
-    <section class="app-content">
-        <!-- index router -->
-        <router-view></router-view>
+    <section class="index_main">
+      <router-view></router-view>
     </section>
     <index-nav></index-nav>
   </div>
@@ -26,16 +25,20 @@ export default {
 <style lang="less" scoped>
   @import '../../static/less/variable.less';
   .index-view {
-    .app-content {
-      padding-top: 45px;
+    height: 100%;
+    .index_main {
       padding-bottom: 50px;
       overflow: hidden;
-      position: relative;
-      height: 100%;
+      position: absolute;
+      height: auto;
+      top:0;
+      right: 0;
+      left: 0;
+      bottom: 0;
     }
+ }
 
-    .app-content ._full_inner {
-      z-index: 2;
-    }
+  .index_main ._full_inner {
+    z-index: 2;
   }
 </style>

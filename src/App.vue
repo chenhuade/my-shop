@@ -29,6 +29,7 @@ export default {
 @import '../static/less/base.less';
 	#app{
     height: 100%;
+    overflow: hidden;
     margin: 0 auto;
     .welcome {
       width: 100%;

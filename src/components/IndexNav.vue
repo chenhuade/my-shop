@@ -38,7 +38,8 @@ export default {
   @import '../../static/less/variable.less';
   .index-nav {
     bottom: 0;
-    position:fixed;
+    left: 0;
+    position: fixed;;
     width: 100%;
     height: @footer_height;
     background: #f9f9f9;
