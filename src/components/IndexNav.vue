@@ -40,7 +40,7 @@ export default {
     bottom: 0;
     position:fixed;
     width: 100%;
-    height: 50px;
+    height: @footer_height;
     background: #f9f9f9;
     box-shadow: 0 -2px 9px rgba(0, 0, 0, .1);
     font-size: 12px;

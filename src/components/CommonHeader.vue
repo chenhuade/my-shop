@@ -11,7 +11,7 @@
         <li v-for="item in menuArr" :key="item.text">
             <router-link :to="item.path">
               <span class="iconfont" :class="item.iconClass"></span>
-              <div v-text="item.text"></div>
+              <div class="tips-menu-text" v-text="item.text"></div>
             </router-link>
         </li>
       </ul>
@@ -43,6 +43,8 @@ export default {
 </script>
 
 <style lang="less" scoped>
+  @import '../../static/less/variable.less';
+
   .common-header {
     display: flex;
     position: fixed;
@@ -50,14 +52,14 @@ export default {
     top: 0;
     width: 100%;
     z-index: 3;
-    height: 45px;
-    line-height: 45px;
+    height: @header_height;
+    line-height: @header_height;
     font-size: 19px;
     background: linear-gradient(to bottom, #303036, #3c3b40);
     color: #ffffff;
     text-align: center;
     .left {
-      flex:0 0 48px; /* 左右两列固定宽 */
+      flex:0 0 @header_left; /* 左右两列固定宽 */
       order:-1; /* 让left居于左侧 */
       .leftImg {
         padding-top: 8px; /* 用box的高度减去图片的高度再除以2，就是padding-top的值 */
@@ -66,7 +68,7 @@ export default {
       }
     }
     .right {
-      flex:0 0 48px; /* 左右两列固定宽 */
+      flex:0 0 @header_right; /* 左右两列固定宽 */
     }
     
     .title {
@@ -83,8 +85,8 @@ export default {
       top: 0;
       width: 100%;
       z-index: 1;
-      top: 45px;
-      bottom: 50px;
+      top: @header_height;
+      bottom: @footer_height;
     }
 
     .tips-menu {
@@ -93,7 +95,7 @@ export default {
       width: 133px;
       font-size: 16px;
       right: -10px;
-      top: 54px;
+      top: @tips_menu;
       text-align: left;
       border-radius: 2px;
       background-color: #49484b;
@@ -148,6 +150,10 @@ export default {
 
     .tips-menu .iconfont {
       margin-right: 15px;
+    }
+
+    .tips-menu .tips-menu-text {
+      color: #ffffff;
     }
   }
 </style>

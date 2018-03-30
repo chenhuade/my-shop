@@ -3,6 +3,8 @@
     <common-header style="overflow:visible;">
       我
     </common-header>
+    <router-link :to="{name:'convertest'}" tag="button">点击</router-link>
+    <router-view></router-view>
   </div>
 </template>
 
