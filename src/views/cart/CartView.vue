@@ -22,6 +22,13 @@ export default {
       }]
     }
   },
+  created() {
+    this.$store.dispatch({
+      type: 'login',
+      phone: '1',
+      password: '1'
+    })
+  }, 
   components: {
     CommonHeader
   }

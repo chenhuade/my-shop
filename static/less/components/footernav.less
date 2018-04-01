@@ -1,0 +1,61 @@
+@import '../variable.less';
+
+.@{css-prefix}-footer-nav {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: @footer_height;
+  background: #f9f9f9;
+  box-shadow: 0 -2px 9px rgba(0, 0, 0, .1);
+  z-index: 3;
+  .footer-item {
+    flex-grow: 1;
+    user-select: none;
+    -webkit-user-select: none;
+    text-align: center;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    text-align: center;
+  }
+
+  .footer-title {
+    color: @base_textColor;
+  }
+
+  .footerIcon {
+    background-size: 100% 100%!important;
+  }
+
+  .footerCategoryIcon {
+    background: url('/static/img/icon/tab_category.png');
+  }
+  .footerCartIcon {
+    background: url('/static/img/icon/tab_activity.png');
+  }
+
+  .footerMemberIcon {
+    background: url('/static/img/icon/tab_member.png');
+  }
+
+  .active .footer-title {
+    color: @theme_color;
+  }
+
+  .active .footerCategoryIcon {
+    background: url('/static/img/icon/tab_category_select.png');
+  }
+
+  .active .footerCartIcon {
+    background: url('/static/img/icon/tab_activity_select.png');
+  }
+
+  .active .footerMemberIcon {
+    background: url('/static/img/icon/tab_member_select.png');
+  }
+}

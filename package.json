@@ -18,6 +18,8 @@
     "fastclick": "^1.0.6",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.8",
     "superagent": "^3.8.2",
     "superagent-jsonp": "^0.2.1",
     "vue": "^2.5.2",

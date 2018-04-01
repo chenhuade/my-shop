@@ -3,12 +3,12 @@
     <section class="index_main">
       <router-view></router-view>
     </section>
-    <index-nav></index-nav>
+    <xx-footer-nav></xx-footer-nav>
   </div>
 </template>
 
 <script>
-import IndexNav from '../components/IndexNav'
+import FooterNav from '../components/FooterNav'
 
 export default {
   name: 'index-view',
@@ -17,7 +17,7 @@ export default {
     }
   },
   components: {
-      IndexNav
+      'xx-footer-nav': FooterNav
   }
 }
 </script>
@@ -27,14 +27,13 @@ export default {
   .index-view {
     height: 100%;
     .index_main {
-      padding-bottom: 50px;
       overflow: hidden;
       position: absolute;
       height: auto;
       top:0;
       right: 0;
       left: 0;
-      bottom: 0;
+      bottom: @footer_height;
     }
  }
 
